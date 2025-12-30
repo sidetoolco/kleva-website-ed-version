@@ -2,7 +2,6 @@ import { Hero } from './components/Hero';
 import { SocialProof } from './components/SocialProof';
 import { Features } from './components/Features';
 import { Navigation } from './components/Navigation';
-import { KeyBenefits } from './components/KeyBenefits';
 import { ReliabilitySection } from './components/ReliabilitySection';
 import { BeyondSavings } from './components/BeyondSavings';
 import { Footer } from './components/Footer';
@@ -19,7 +18,6 @@ export default function App() {
       <Hero />
       <SocialProof />
       <ProblemSection />
-      <KeyBenefits />
       <Features />
       <HowItWorks />
       <StatsSection />
