@@ -22,7 +22,7 @@ export function ReliabilitySection() {
               Robust auditing and performance reporting so you can be sure your AI team is always doing their best work.
             </p>
             <button className="bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-colors shadow-lg">
-              Book a demo
+              Start a Pilot
             </button>
           </div>
         </div>

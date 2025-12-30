@@ -19,7 +19,7 @@ export function StatsSection() {
               Real metrics from lenders who deployed Kleva in production environments.
             </p>
             <button className="bg-white text-black px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-xl">
-              Book a demo
+              Start a Pilot
             </button>
           </div>
 

@@ -27,7 +27,7 @@ export function Navigation() {
         </div>
 
         <button className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition-colors">
-          Book a demo
+          Start a Pilot
         </button>
       </div>
     </nav>

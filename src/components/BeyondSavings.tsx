@@ -23,7 +23,7 @@ export function BeyondSavings() {
                 AI workers do more than cut costs. They allow you to move faster, act smarter, & do more.
               </p>
               <button className="bg-black text-white px-8 py-3 rounded hover:bg-gray-800 transition-colors">
-                Book a demo
+                Start a Pilot
               </button>
             </div>
           </div>

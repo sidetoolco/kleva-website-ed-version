@@ -21,7 +21,7 @@ export function CTASection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <button className="bg-white text-black px-10 py-5 rounded-lg hover:bg-gray-100 transition-colors shadow-xl text-lg">
-            Book a demo
+            Start a Pilot
           </button>
           <button className="bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-lg hover:bg-white/20 transition-colors border border-white/30 text-lg">
             Contact sales
