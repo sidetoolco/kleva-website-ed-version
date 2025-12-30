@@ -27,12 +27,9 @@ export function Hero() {
           that fits how lenders are supervised and examined.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex items-center justify-center">
           <button className="bg-white text-black px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-xl">
             Start a Pilot
-          </button>
-          <button className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg hover:bg-white/20 transition-colors border border-white/30">
-            Watch overview
           </button>
         </div>
       </div>

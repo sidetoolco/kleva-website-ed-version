@@ -12,9 +12,6 @@ export function Navigation() {
           <a href="#product" className="text-gray-600 hover:text-gray-900 transition-colors">
             Product
           </a>
-          <a href="#solutions" className="text-gray-600 hover:text-gray-900 transition-colors">
-            Solutions
-          </a>
           <a href="#compliance" className="text-gray-600 hover:text-gray-900 transition-colors">
             Compliance
           </a>
