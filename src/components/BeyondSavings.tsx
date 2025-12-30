@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import beyondImage from 'figma:asset/e09ac2834f2847b8a8b5e3c863fba0c3f7508418.png';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function BeyondSavings() {
   return (
@@ -41,10 +41,10 @@ export function BeyondSavings() {
 
         {/* Image */}
         <div className="rounded-lg overflow-hidden shadow-2xl">
-          <img
-            src={beyondImage}
-            alt="Kleva platform interface showing workflow automation"
-            className="w-full"
+          <ImageWithFallback
+            src="https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaSUyMGZ1dHVyaXN0aWMlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTczNTU2ODg1MXww&ixlib=rb-4.1.0&q=80&w=1920"
+            alt="Futuristic AI technology visualization"
+            className="w-full h-[500px] object-cover"
           />
         </div>
 
