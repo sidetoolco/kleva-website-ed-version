@@ -7,6 +7,9 @@ This is a React + TypeScript landing page for Kleva, a compliance-first AI colle
 
 Original Figma design: https://www.figma.com/design/spgmXxpeOvmRl5btHQAw3F/Website-Review-Request
 
+**Live Site**: https://kleva-website-ed-version.vercel.app
+**Repository**: https://github.com/sidetoolco/kleva-website-ed-version.git
+
 ## Commands
 
 ### Development
@@ -38,6 +41,16 @@ src/
 ├── App.tsx              # Main app component, renders all sections
 ├── main.tsx             # Entry point
 ├── index.css            # Tailwind CSS v4 imports and utilities
+├── assets/              # Brand assets and customer logos
+│   ├── black_full_name_logo.svg
+│   ├── black_icon.svg
+│   ├── white_full_name_logo.svg
+│   ├── white_icon.svg
+│   ├── credito-argentino.webp
+│   ├── adt.jpeg
+│   ├── banco-guayaquil.png
+│   ├── oncity.png
+│   └── vana.svg
 ├── styles/
 │   └── globals.css      # Theme variables and custom styles
 ├── components/          # Page sections (Hero, Features, etc.)
@@ -72,11 +85,12 @@ Import components using:
 - `./components/relative/path` for relative imports
 
 ### Design System Notes
-- Primary CTA buttons use white background with black text
-- Secondary buttons use white/10 with backdrop blur
+- Primary CTA: "Start a Pilot" (white background with black text, single CTA throughout)
+- No secondary CTAs (removed "Watch overview" and "Contact sales")
 - Gradient overlays are common (from-black/40 via-black/30 to-black/50)
 - Sections alternate between white, gray-50, and gradient backgrounds
 - Brand colors: orange-600/700 accent colors, slate-700/800 for dark sections
+- Customer logos display as monochromatic (black) silhouettes on gray-50 background
 
 ## Key Files
 
@@ -88,19 +102,18 @@ Import components using:
 
 ### src/App.tsx
 Main component that composes all page sections in order:
-1. Navigation (sticky header)
-2. Hero (full-screen with background image)
-3. ProblemSection
-4. KeyBenefits
-5. Features
+1. Navigation (sticky header with logo, About, Contact, and "Start a Pilot" CTA)
+2. Hero (full-screen with background image and single CTA)
+3. SocialProof (customer logos: Crédito Argentino, ADT, Banco Guayaquil, OnCity, Vana)
+4. ProblemSection ("The Challenge" with dashboard visualization)
+5. Features ("Build Compliant Workflows" 2x2 grid with warm gradient)
 6. HowItWorks
 7. StatsSection
-8. WorkforceManagement
-9. ReliabilitySection
-10. BeyondSavings
-11. Testimonials
-12. CTASection
-13. Footer
+8. ReliabilitySection ("The Kleva Difference" with three feature cards)
+9. BeyondSavings
+10. Testimonials
+11. CTASection (single "Start a Pilot" CTA)
+12. Footer (Product, Company sections only)
 
 ### src/index.css
 Contains all Tailwind CSS v4 configuration including:
@@ -133,8 +146,10 @@ Defines design system variables:
 
 ### Working with Images
 - External images use ImageWithFallback component from `components/figma/`
-- Local assets should go in `src/assets/` and be imported via the Figma alias system
+- Local assets go in `src/assets/` and are imported via `@/assets/` alias
 - Unsplash images are already integrated, see Attributions.md for licensing
+- Brand logos (Kleva) are in SVG format with both black and white versions
+- Customer logos use monochromatic styling with `filter: 'grayscale(100%) brightness(0)'`
 
 ## Important Constraints
 - This is a static landing page, no backend or API integration
@@ -142,3 +157,34 @@ Defines design system variables:
 - No environment variables setup
 - Uses Unsplash images, must comply with Unsplash license terms
 - shadcn/ui components used under MIT license
+
+## Recent Changes (Dec 30, 2024)
+
+### Content Reorganization
+- Removed separate benefit cards section from ReliabilitySection
+- Merged "The Kleva Difference" content into the three-column grid cards
+- "Trust & Performance" content removed from display
+- Removed WorkforceManagement and KeyBenefits components entirely
+
+### CTA Simplification
+- Changed all CTAs from "Book a demo" to "Start a Pilot"
+- Removed all secondary CTAs ("Watch overview", "Contact sales")
+- Single clear CTA throughout the entire site
+
+### Navigation Updates
+- Removed "Product", "Compliance", and "Solutions" navigation links
+- Simplified to only: Logo, About, Contact, and "Start a Pilot" button
+- Footer updated to 3 columns (removed Solutions column)
+
+### Social Proof Section
+- Added actual customer logos: Crédito Argentino, ADT, Banco Guayaquil, OnCity, Vana
+- Logos stored in `src/assets/` directory
+- Display as monochromatic black silhouettes using CSS filters
+- Background changed to gray-50 to match site design
+- Positioned between Hero and ProblemSection
+
+### Branding
+- Kleva logos integrated (black and white versions, full name and icon)
+- Favicon set to black icon
+- Page title: "Kleva - Compliance-First AI for Collections"
+- Logo used in Navigation and Footer components
