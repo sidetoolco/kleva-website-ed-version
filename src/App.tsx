@@ -1,4 +1,5 @@
 import { Hero } from './components/Hero';
+import { SocialProof } from './components/SocialProof';
 import { Features } from './components/Features';
 import { Navigation } from './components/Navigation';
 import { KeyBenefits } from './components/KeyBenefits';
@@ -17,6 +18,7 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <Hero />
+      <SocialProof />
       <ProblemSection />
       <KeyBenefits />
       <Features />

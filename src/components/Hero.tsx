@@ -16,10 +16,6 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <div className="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full mb-8">
-          Compliance-First AI for Lenders
-        </div>
-
         <h1 className="text-white mb-6 text-5xl md:text-7xl leading-tight">
           Intelligence that runs
           <br />
@@ -31,33 +27,13 @@ export function Hero() {
           that fits how lenders are supervised and examined.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button className="bg-white text-black px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-xl">
             Book a demo
           </button>
           <button className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg hover:bg-white/20 transition-colors border border-white/30">
             Watch overview
           </button>
-        </div>
-
-        <div className="text-white/70 mb-6 text-sm uppercase tracking-wider">
-          Trusted by banks, credit unions, auto lenders, and fintechs
-        </div>
-
-        {/* Partner Logos */}
-        <div className="flex items-center justify-center gap-12 flex-wrap opacity-80">
-          <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded">
-            <span className="text-white">Wells Fargo</span>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded">
-            <span className="text-white">Chase</span>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded">
-            <span className="text-white">Capital One</span>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded">
-            <span className="text-white">Ally Financial</span>
-          </div>
         </div>
       </div>
 
