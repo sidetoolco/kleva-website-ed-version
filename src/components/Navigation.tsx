@@ -9,12 +9,6 @@ export function Navigation() {
         </div>
         
         <div className="hidden md:flex items-center gap-8">
-          <a href="#product" className="text-gray-600 hover:text-gray-900 transition-colors">
-            Product
-          </a>
-          <a href="#compliance" className="text-gray-600 hover:text-gray-900 transition-colors">
-            Compliance
-          </a>
           <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">
             About
           </a>
