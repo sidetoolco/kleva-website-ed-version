@@ -4,16 +4,17 @@ export function ReliabilitySection() {
   return (
     <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Key Benefits Header */}
-        <div className="text-center mb-20">
-          <div className="text-sm tracking-wider text-gray-500 mb-6 uppercase">
-            The Kleva Difference
+        {/* Reliability Header */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
+          <div>
+            <div className="text-sm tracking-wider text-gray-500 mb-6 uppercase">
+              The Kleva Difference
+            </div>
+            <h2 className="text-4xl md:text-6xl">
+              Built for lenders,<br />
+              <span className="text-gray-400">not retrofitted</span>
+            </h2>
           </div>
-          <h2 className="text-4xl md:text-5xl mb-6">
-            Built for lenders,
-            <br />
-            <span className="text-gray-400">not retrofitted</span>
-          </h2>
         </div>
         
         {/* Three Benefits */}
@@ -33,29 +34,6 @@ export function ReliabilitySection() {
             title="Scale consistent experiences"
             description="Build once and run everywhere, with a continuously-improving, trusted AI agent tailored to your brand, goals, and processes."
           />
-        </div>
-
-        {/* Reliability Header */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
-          <div>
-            <div className="text-sm tracking-wider text-gray-500 mb-6 uppercase">
-              Trust & Performance
-            </div>
-            <h2 className="text-4xl md:text-6xl">
-              Reliability &<br />
-              <span className="text-gray-400">observability</span>
-              <br />
-              at scale
-            </h2>
-          </div>
-          <div className="flex flex-col items-start justify-center h-full">
-            <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              Robust auditing and performance reporting so you can be sure your AI team is always doing their best work.
-            </p>
-            <button className="bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-colors shadow-lg">
-              Start a Pilot
-            </button>
-          </div>
         </div>
 
         {/* Three Column Grid */}
