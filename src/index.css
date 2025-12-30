@@ -109,6 +109,19 @@
     --color-gray-900: oklch(.21 .034 264.665);
     --color-black: #000;
     --color-white: #fff;
+    
+    /* HappyRobot-inspired color palette */
+    --color-brand-dark: #0E0D0C;
+    --color-brand-light: #FCFCFC;
+    --color-cream: #EBE6D2;
+    --color-peach: #DA8D55;
+    --color-mint: #DDE8D8;
+    --color-success-dark: #027A48;
+    --color-success-light: #ECFDF3;
+    --color-error-dark: #B42318;
+    --color-error: #E23939;
+    --color-error-light: #FEF3F2;
+    
     --spacing: .25rem;
     --container-2xl: 42rem;
     --container-4xl: 56rem;
