@@ -1,3 +1,5 @@
+import blackFullLogo from '@/assets/black_full_name_logo.svg';
+
 export function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 py-16">
@@ -5,11 +7,8 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
-                <span className="text-white font-medium">K</span>
-              </div>
-              <span className="text-xl font-medium text-gray-900">Kleva</span>
+            <div className="mb-4">
+              <img src={blackFullLogo} alt="Kleva" className="h-8" />
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
               Compliance-first AI for collections and loss mitigation
