@@ -3,7 +3,6 @@ import { SocialProof } from './components/SocialProof';
 import { Features } from './components/Features';
 import { Navigation } from './components/Navigation';
 import { KeyBenefits } from './components/KeyBenefits';
-import { WorkforceManagement } from './components/WorkforceManagement';
 import { ReliabilitySection } from './components/ReliabilitySection';
 import { BeyondSavings } from './components/BeyondSavings';
 import { Footer } from './components/Footer';
@@ -24,7 +23,6 @@ export default function App() {
       <Features />
       <HowItWorks />
       <StatsSection />
-      <WorkforceManagement />
       <ReliabilitySection />
       <BeyondSavings />
       <Testimonials />
