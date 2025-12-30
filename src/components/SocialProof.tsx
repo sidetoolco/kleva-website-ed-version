@@ -18,11 +18,15 @@ export function SocialProof() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between gap-8 lg:gap-16 flex-wrap">
           {logos.map((logo) => (
-            <div key={logo.name} className="flex items-center justify-center opacity-60 hover:opacity-80 transition-opacity grayscale hover:grayscale-0">
+            <div key={logo.name} className="flex items-center justify-center opacity-50 hover:opacity-70 transition-opacity">
               <img 
                 src={logo.src} 
                 alt={logo.name}
-                style={{ height: `${logo.height}px`, width: 'auto' }}
+                style={{ 
+                  height: `${logo.height}px`, 
+                  width: 'auto',
+                  filter: 'grayscale(100%) brightness(0)'
+                }}
                 className="object-contain max-w-[150px]"
               />
             </div>
