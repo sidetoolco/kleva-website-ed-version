@@ -1,32 +1,48 @@
 export function SocialProof() {
+  const logos = [
+    {
+      name: 'Clay',
+      src: 'https://www.clay.com/logo.svg',
+      width: 80
+    },
+    {
+      name: 'Coda',
+      src: 'https://coda.io/static/logos/coda-logo.svg',
+      width: 90
+    },
+    {
+      name: 'ConsenSys',
+      src: 'https://consensys.io/static/logo.svg',
+      width: 140
+    },
+    {
+      name: 'Culture Amp',
+      src: 'https://www.cultureamp.com/hubfs/culture-amp-logo.svg',
+      width: 140
+    },
+    {
+      name: 'LaunchDarkly',
+      src: 'https://launchdarkly.com/static/images/logo.svg',
+      width: 140
+    }
+  ];
+
   return (
-    <section className="py-12 bg-[#F5F5F0]">
+    <section className="py-16 bg-[#0A0B0F]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center gap-8 lg:gap-12 flex-wrap">
-          {/* Left text */}
-          <div className="flex-shrink-0">
-            <p className="text-sm text-gray-600 max-w-[200px]">
-              Trusted by banks, credit unions, auto lenders, and fintechs across the US:
-            </p>
-          </div>
-          
-          {/* Logo Grid */}
-          <div className="flex items-center gap-8 lg:gap-12 flex-wrap flex-1">
-            <LogoBox name="Wells Fargo" />
-            <LogoBox name="Chase" />
-            <LogoBox name="Capital One" />
-            <LogoBox name="Ally Financial" />
-          </div>
+        <div className="flex items-center justify-between gap-12 flex-wrap">
+          {logos.map((logo) => (
+            <div key={logo.name} className="flex items-center justify-center opacity-50 hover:opacity-75 transition-opacity grayscale">
+              <img 
+                src={logo.src} 
+                alt={logo.name}
+                style={{ width: `${logo.width}px`, height: 'auto', filter: 'brightness(0) invert(1)' }}
+                className="object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
-  );
-}
-
-function LogoBox({ name }: { name: string }) {
-  return (
-    <div className="text-xl font-medium text-gray-400 hover:text-gray-600 transition-colors">
-      {name}
-    </div>
   );
 }
