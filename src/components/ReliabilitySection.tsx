@@ -17,33 +17,15 @@ export function ReliabilitySection() {
           </div>
         </div>
         
-        {/* Three Benefits */}
-        <div className="grid md:grid-cols-3 gap-12 mb-32">
-          <BenefitCard
-            icon={<MessageSquare className="w-6 h-6" />}
-            title="Natural, empathetic conversations"
-            description="Kleva delivers personalized conversations that feel human. Always available, endlessly patient, and able to reason, predict, and act in real-time."
-          />
-          <BenefitCard
-            icon={<Network className="w-6 h-6" />}
-            title="Connect to your call center ecosystem"
-            description="Seamlessly integrate with your existing technology stack, with comprehensive summaries and intelligent routing when escalation is required."
-          />
-          <BenefitCard
-            icon={<TrendingUp className="w-6 h-6" />}
-            title="Scale consistent experiences"
-            description="Build once and run everywhere, with a continuously-improving, trusted AI agent tailored to your brand, goals, and processes."
-          />
-        </div>
 
         {/* Three Column Grid */}
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Built for scale */}
           <div className="bg-[#F5F1E8] rounded-lg p-8 flex flex-col justify-between min-h-[400px]">
             <div>
-              <h3 className="mb-6">Built for scale</h3>
+              <h3 className="mb-6">Natural, empathetic conversations</h3>
               <p className="text-gray-600 mb-8">
-                AI workers are always on call. Tasks scale up and down with demand. AI workers are always ready with enterprise-grade reliability.
+                Kleva delivers personalized conversations that feel human. Always available, endlessly patient, and able to reason, predict, and act in real-time.
               </p>
             </div>
             <div className="bg-white rounded-lg p-4 flex items-center gap-3 shadow-sm">
@@ -62,9 +44,9 @@ export function ReliabilitySection() {
           {/* Performance you can trust */}
           <div className="bg-[#E8A661] rounded-lg p-8 flex flex-col justify-between min-h-[400px]">
             <div>
-              <h3 className="mb-6 text-white">Performance you can trust</h3>
+              <h3 className="mb-6 text-white">Connect to your call center ecosystem</h3>
               <p className="text-white/90 mb-8">
-                Measure success at every step. Measure and compare performance across different AI workers and strategies.
+                Seamlessly integrate with your existing technology stack, with comprehensive summaries and intelligent routing when escalation is required.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-full p-8 relative">
@@ -100,9 +82,9 @@ export function ReliabilitySection() {
           {/* Built-in supervision */}
           <div className="bg-[#F5F1E8] rounded-lg p-8 flex flex-col justify-between min-h-[400px]">
             <div>
-              <h3 className="mb-6">Built-in supervision</h3>
+              <h3 className="mb-6">Scale consistent experiences</h3>
               <p className="text-gray-600 mb-8">
-                Smart auditing with AI. The AI auditor acts as a supervisor, making sure AI workers complete tasks correctly and escalate when needed.
+                Build once and run everywhere, with a continuously-improving, trusted AI agent tailored to your brand, goals, and processes.
               </p>
             </div>
             <div className="space-y-3">
